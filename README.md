@@ -1,10 +1,10 @@
-####  Projeto desenvolvido durante a Next Level Week(NLW) da Rocketseat segue abaixo a descrição oficial do projeto feito por  link GitHub do ministrante do NLW Mayk Brito. [http://https://github.com/Rocketseat/nlw-01-starter](http://https://github.com/Rocketseat/nlw-01-starter)
+####  Projeto desenvolvido durante a Next Level Week(NLW) da Rocketseat segue abaixo a descrição oficial do projeto feito pelo ministrante do NLW Mayk Brito. [http://https://github.com/Rocketseat/nlw-01-starter](http://https://github.com/Rocketseat/nlw-01-starter)
 
 ------------
 
 
 <h1 align="center">
-    <img alt="Ecoleta" title="Ecoleta" src=".github/ecoleta.svg" width="220px" />
+    <img alt="Ecoleta" title="Ecoleta" src="https://i.imgur.com/0qneVnb.png" width="220px" />
 </h1>
 
 <p align="center">
