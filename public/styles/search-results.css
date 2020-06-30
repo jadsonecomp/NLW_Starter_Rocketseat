@@ -1,12 +1,16 @@
-/*colocou um outro background atrá do meu body original, dando o efeito de meia página com coloração diferente*/
+body{
+    background-color: white;
+}
+/*colocou um outro background atrás do meu body original, dando o efeito de meia página com coloração diferente*/
 body::after{
     content: "";
-    position: fixed;
-    background: white;
-    top: 260px;
+    position: absolute;
+    background: #f0f0f5;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 16rem;
     z-index: -1;
 }
 

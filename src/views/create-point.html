@@ -12,6 +12,7 @@
 {% block styles %}
 
     <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 
 {% endblock styles %}
 
@@ -20,7 +21,7 @@
 
     {% include "partials/page-header.html" %}
 
-    <form action="">
+    <form action="/savepoint" method="POST">
 
         <h1>Cadastro do ponto de coleta</h1>
 
@@ -111,32 +112,32 @@
 
             <div class="items-grid">
 
-                <li data-id="1">
+                <li data-id="Lâmpadas">
                     <img src="/assets/lampadas.svg" alt="Lâmpadas">
                     <scan>Lâmpadas</scan>
                 </li>
 
-                <li data-id="2">
+                <li data-id="Pilhas e Baterias">
                     <img src="/assets/baterias.svg" alt="Pilhas e Baterias">
                     <scan>Pilhas e Baterias</scan>
                 </li>
 
-                <li data-id="3">
+                <li data-id="Papeis e Papelão">
                     <img src="/assets/papeis-papelao.svg" alt="Papeis e Papelão">
                     <scan>Papeis e Papelão</scan>
                 </li>
 
-                <li data-id="4">
+                <li data-id="Resíduos Eletrônicos">
                     <img src="/assets/eletronicos.svg" alt="Resíduos Eletrônicos">
                     <scan>Resíduos Eletrônicos</scan>
                 </li>
 
-                <li data-id="5">
+                <li data-id="Resíduos Orgânicos">
                     <img src="/assets/organicos.svg" alt="Resíduos Orgânicos">
                     <scan>Resíduos Orgânicos</scan>
                 </li>
 
-                <li data-id="6">
+                <li data-id="Óleo de Cozinha">
                     <img src="/assets/oleo.svg" alt="Óleo de Cozinha">
                     <scan>Óleo de Cozinha</scan>
                 </li>
@@ -153,8 +154,18 @@
         <button type="submit">Cadastrar ponto de coleta</button>
 
     </form>
+    
 
 {% endblock content %}
+
+{% block modal %}
+
+    {% if saved %}
+        {% include "partials/point-created.html" %}
+    {% endif %} 
+
+{% endblock modal%}
+
     
 {% block scripts %}
 
